@@ -10,6 +10,29 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
+
+$content-width: 1200px;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+  max-width: $content-width;
+  padding: 24px 0;
+
+  @media (max-width: $content-width) {
+    padding: 24px;
+  }
+}
+
+@import "partials";

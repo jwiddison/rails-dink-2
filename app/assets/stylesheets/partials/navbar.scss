@@ -1,0 +1,42 @@
+#navbar {
+  background-color: #000;
+  color: #fff;
+  height: 50px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  .content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: $content-width;
+
+    #site-name {
+      font-weight: 600;
+      @media (min-width: $content-width) {
+        margin-left: -16px;
+      }
+    }
+
+    .nav-item {
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 3.125;
+      padding: 0 16px;
+
+      &:hover {
+        background-color: grey;
+      }
+    }
+
+    .content-right {
+      display: flex;
+      @media (min-width: $content-width) {
+        margin-right: -16px;
+      }
+    }
+  }
+}
